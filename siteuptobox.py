@@ -121,6 +121,7 @@ def showFile():
         if (sNextPage != False):
             oOutputParameterHandler = cOutputParameterHandler()
             oOutputParameterHandler.addParameter('siteUrl', sNextPage)
+            oOutputParameterHandler.addParameter('file', 'fileonly')
             oGui.addNext(SITE_IDENTIFIER, 'showFile', '[COLOR teal]Next >>>[/COLOR]', oOutputParameterHandler)
             
         if sFileonly != 'fileonly':    
